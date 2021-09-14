@@ -1,9 +1,8 @@
 {
-    "name": "symfony/dom-crawler",
+    "name": "selay/dom-crawler",
     "type": "library",
     "description": "Eases DOM navigation for HTML and XML documents",
     "keywords": [],
-    "homepage": "https://symfony.com",
     "license": "MIT",
     "authors": [
         {
@@ -13,6 +12,10 @@
         {
             "name": "Symfony Community",
             "homepage": "https://symfony.com/contributors"
+        },
+        {
+            "name": "Selay fixes",
+            "homepage": ""
         }
     ],
     "require": {
