@@ -1037,10 +1037,13 @@ class Crawler implements \Countable, \IteratorAggregate
         $prefixes = $this->findNamespacePrefixes($xpath);
 
         $crawler = $this->createSubCrawler(null);
-
+//nimle
         foreach ($this->nodes as $node) {
-            $domxpath = $this->createDOMXPath($node->ownerDocument, $prefixes);
-            $crawler->add($domxpath->query($xpath, $node));
+            if ($node->ownerDocument instanceof \DOMElement){
+                $domxpath = $this->createDOMXPath($node->ownerDocument, $prefixes);
+                $crawler->add($domxpath->query($xpath, $node));
+            }
+            
         }
 
         return $crawler;
